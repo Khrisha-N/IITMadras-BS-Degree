@@ -72,7 +72,13 @@
     
     
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDTR4NZ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
+    <script>
+  // Redirect to login if not logged in
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "index.html"; // or your login page
+  }
+</script>
+
     
     
     <div id=student_form_foundation class="d-none sf-hidden">
